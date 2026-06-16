@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Hello World!²");
-        System.out.println("Hello World!³ ❤❤❤");
+        //Variable: Ein Speicher für einen Wert
+        //Datentyp: Gibt an, von welcher Art die Variable ist
+
+        int number = 3;
+        System.out.println(number);
+
     }
 }
