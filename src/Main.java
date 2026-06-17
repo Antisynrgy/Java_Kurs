@@ -3,8 +3,10 @@ public class Main {
         //Variablen anwenden
 
         int number;     //Erstellung (Deklaration)
-        number = 10;    //Zuweisung (Initialisierung)
         String word;
+
+
+        number = 10;    //Zuweisung (Initialisierung)
         word = "Hello World";
 
     }
