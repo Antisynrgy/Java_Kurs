@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        int anzahl = 12;
-        String obst = " Wassermelonen";
-        double number = 3.1415;     //double = Kommazahlen
-        boolean bool = true;        //true oder false
+        //Variablen anwenden
+
+        int number;     //Erstellung (Deklaration)
+        number = 10;    //Zuweisung (Initialisierung)
+        String word;
+        word = "Hello World";
 
     }
 }
