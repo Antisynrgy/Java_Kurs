@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 6;
-        boolean erhöhen = (number <= 5);
-        if (erhöhen) {
-            number += 3;
-            System.out.println(number);
+        //Übung: Alter > 18 --> Volljährig, sonst Minderjährig
+        int number = 19;
+        boolean Alter = (number >= 18);
+        if (Alter) {
+            System.out.println("Volljährig");
         } else {
-            System.out.println(number);
+            System.out.println("Minderjährig");
         }
 
     }
