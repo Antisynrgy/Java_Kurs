@@ -1,13 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        //Variablen anwenden
+        if (Bedingung) {        //IF ELSE: Wenn Bedingung erfüllt --> IF-Code ausführen, wenn nicht, dann ELSE-Code
 
-        int number;     //Erstellung (Deklaration)
-        String word;
+        } else {
 
-
-        number = 10;    //Zuweisung (Initialisierung)
-        word = "Hello World";
-
+        }
+        }
     }
 }
