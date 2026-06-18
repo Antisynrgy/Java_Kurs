@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 5;             //= : Zuweisung, == : Test(Gleich), != : Test(Ungleich), >,<,>=,<=
-        if (number == 5) {
-            System.out.println("Number ist gleich 5");
+        int number = 6;
+        boolean erhöhen = true;
+        if (erhöhen) {
+            number += 3;
+            System.out.println(number);
         } else {
-            System.out.println("Number ungleich 5");
+            System.out.println(number);
         }
 
     }
