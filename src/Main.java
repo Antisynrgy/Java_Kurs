@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        double temperatur = 25;
+        //exclusive or
+        boolean jan_gewonnen = true;
+        boolean tim_gewonnen = false;
 
-                //&& : Und-Operator, || : Oder-Operator --> (temperatur > 20 && temperatur < 35) = (temperatur < 20 -- temperatur > 35)
-
-        if (temperatur > 20 && temperatur < 35) {
-
-            System.out.println("Angenehm");
+        if (jan_gewonnen ^ tim_gewonnen) {
+            System.out.println("Richtiges Ergebnis");
         } else {
-            System.out.println("Unangenehm");
+            System.out.println("Da stimmt etwas nicht...");
         }
     }
 }
