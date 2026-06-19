@@ -1,11 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        double temperatur = 18;
+        double temperatur = 25;
 
-        if (!(temperatur > 20)) {           // ! : Nicht-Operator --> (!(temperatur > 20)) = (temperatur <= 20)
-            System.out.println("Kalt");
-        } else {
+                //&& : Und-Operator, || : Oder-Operator --> (temperatur > 20 && temperatur < 35) = (temperatur < 20 -- temperatur > 35)
+
+        if (temperatur > 20 && temperatur < 35) {
+
             System.out.println("Angenehm");
+        } else {
+            System.out.println("Unangenehm");
         }
     }
 }
