@@ -1,13 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //exclusive or
-        boolean jan_gewonnen = true;
-        boolean tim_gewonnen = false;
+        Scanner scan = new Scanner(System.in);
+        String sentence;
 
-        if (jan_gewonnen ^ tim_gewonnen) {
-            System.out.println("Richtiges Ergebnis");
-        } else {
-            System.out.println("Da stimmt etwas nicht...");
-        }
+        System.out.println("Bitte gib einen Satz ein:");
+
+        sentence = scan.nextLine();
+
+        System.out.println("Dein Satz war: " + sentence);
     }
 }
