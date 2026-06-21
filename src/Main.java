@@ -1,16 +1,10 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String sentence;
-        int number;
-
-        System.out.println("Bitte gib eine Zahl ein:");
-
-        //sentence = scan.nextLine();
-        number = scan.nextInt();
-
-        System.out.println("Deine Zahl war: " + (number +1));
+        int counter = 10;
+        //while-Schleife läuft so lange, bis Bedingung nicht mehr erfüllt ist
+        while(counter >= 0) {
+            System.out.println("Der Counter steht bei " + counter);
+            counter--;
+        }
     }
 }
