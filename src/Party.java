@@ -14,10 +14,12 @@ public class Party {
            int value = scan.nextInt();
 
            if (value == 1) {
-               guests++;
+               System.out.println("Wie viele Gäste möchtest du anmelden?");
+               guests += scan.nextInt();
            }
            if (value == 2) {
-                guests--;
+               System.out.println("Wie viele Gäste möchtest du abmelden?");
+               guests -= scan.nextInt();
             }
            if (value == 3) {
                 weiter = false;
