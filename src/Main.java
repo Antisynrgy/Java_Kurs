@@ -1,11 +1,7 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Wie viele Zahlen möchtest du?");
-        int value = scan.nextInt();
-        for (int i = 0; i < value; i++) {
+
+        for (int i = 50; i < 100; i += 2) {
             System.out.println(i);
         }
     }
