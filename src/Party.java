@@ -4,27 +4,30 @@ public class Party {
     public static void main(String[] args) {
         int guests;
         Scanner scan = new Scanner(System.in);
-        boolean weiter = true;
 
-        System.out.println("Anzahl der angemeldeten Gäste: ");
+        System.out.println("Anzahl der Gäste: ");
         guests = scan.nextInt();
 
-        while(weiter) {
-           System.out.println("Gast anmelden (1), abmelden (2), Programm beenden (3)");
-           int value = scan.nextInt();
+        while (true) {
+            System.out.println("+X Gästeanmelden, 0 Programm beenden, -X Gäste abmelden");
+            int value = scan.nextInt();
+            if (value == 0) {
+                break;
+            }
+            if (value > 0) {
+                for(int i = 0; i < value; i++) {
+                    System.out.println("Gast angemeldet");
+                    guests++;
+                }
+            }
+            if (value < 0) {
+                for (int i = 0; i > value; i--) {
+                    System.out.println("Gast abgemeldet");
+                    guests--;
+                }
 
-           if (value == 1) {
-               System.out.println("Wie viele Gäste möchtest du anmelden?");
-               guests += scan.nextInt();
-           }
-           if (value == 2) {
-               System.out.println("Wie viele Gäste möchtest du abmelden?");
-               guests -= scan.nextInt();
             }
-           if (value == 3) {
-                weiter = false;
-            }
+            System.out.println(guests + " Gäste angemeldet");
         }
-        System.out.println("Anzahl der Gäste: " + guests);
     }
 }
