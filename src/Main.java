@@ -1,8 +1,10 @@
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-
-        for (int i = 10; i >= 0; i--) {
-            System.out.println("Der Counter steht bei " + i);
-        }
+        Random random = new Random();
+        int Zufallszahl = random.nextInt(10);   //0-9
+            //nextInt() bezieht sich hier auf random-Objekt und damit auf die Random-Klasse; kein Bezug zu Scanner-Klasse
+        System.out.println(Zufallszahl);
     }
 }
