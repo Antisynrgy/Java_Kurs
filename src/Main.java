@@ -3,8 +3,9 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        int Zufallszahl = random.nextInt(10);   //0-9
-            //nextInt() bezieht sich hier auf random-Objekt und damit auf die Random-Klasse; kein Bezug zu Scanner-Klasse
-        System.out.println(Zufallszahl);
+        for (int i = 0; i < 10; i++) {
+            int Zufallszahl = random.nextInt(6) + 1;    //0-5 --> wollen 1-6 für Würfel (deshalb + 1)
+            System.out.println(Zufallszahl);
+        }
     }
 }
